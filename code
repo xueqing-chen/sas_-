@@ -1,0 +1,19 @@
+data ecommerce;
+set ecommerce_3;
+array a a1-a14;
+array az az1-az3;
+outercnt=1;
+do innnercount=3,7,14;
+     az(outercnt)=0;
+     do k_innercount=1 to innercount;
+          az(outercnt)+a(k_innercount);
+     end;
+ outercnt+1;
+end;
+
+drop ;
+run;
+ 
+  
+     
+
